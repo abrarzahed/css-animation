@@ -1,0 +1,19 @@
+.box {
+    background: #34495e;
+    padding: 20px;
+    width: 200px;
+    margin: 200px auto;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.arrow {
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #34495e;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}

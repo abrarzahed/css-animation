@@ -1,0 +1,61 @@
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.box {
+    width: 500px;
+    margin: 0 auto 100px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.box .box-pic {
+    position: relative;
+    transform-origin: 98% 50% 0;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.box .box-pic:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    height: 8px;
+    width: 8px;
+    background: red;
+    border-radius: 50%;
+}
+
+.box .box-pic img {
+    border-radius: 50%;
+}
+
+.box:hover .box-pic {
+    transform: rotate(-160deg);
+}
+
+.box .box-content {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    padding: 70px 40px;
+    box-sizing: border-box;
+}
+
+.box .box-content h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.box .box-content p {
+    line-height: 1.5rem;
+}

@@ -1,0 +1,42 @@
+* {
+    background: #2C3A47;
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    background: #3742fa;
+    margin-top: 150px;
+    margin-left: 360px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 550px;
+    top: 0;
+    left: 100%;
+    background: #ff4757;
+    z-index: -1;
+    border-radius: 80px;
+    transition: 1s;
+}
+
+button:hover:before {
+    left: -20%;
+}
+
+button:hover {
+    font-size: 40px;
+    color: #2C3A47;
+    border-radius: 0;
+    box-shadow: 5px 5px 20px #f1f2f6;
+}

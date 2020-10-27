@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+    float: right;
+}
+
+ul li {
+    display: inline;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: 1s;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
+ul li:hover {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: red
+}
